@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FindFastestAmbulance</string>
+    <string name="title_activity_Useruser_map">User Map</string>
+    <string name="title_activity_Driveruser_map">Driver Map</string>
+    <array name="company">
+        <item></item>
+        <item>Chhipa</item>
+        <item>Edhi</item>
+        <item>Aman</item>
+        <item>KKF</item>
+        <item>Rescue</item>
+    </array>
+</resources>

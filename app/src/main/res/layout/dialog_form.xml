@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:enabled="false"
+            android:text="Code Verification"
+            android:textColor="@color/colorAccent"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="@drawable/back"/>
+
+        <EditText
+            android:id="@+id/txtmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:enabled="false"
+            android:textSize="25dp"
+            android:text="Enter four digit Number"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:background="@drawable/back"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:hint="Input Here"
+        android:maxLength="4"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:background="@drawable/back"/>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorGreen"
+        android:text="Ok"
+        android:textColor="@color/colorwhite"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+</LinearLayout>

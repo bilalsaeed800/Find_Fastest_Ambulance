@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "692759937193",
+    "firebase_url": "https://myapp1-159806.firebaseio.com",
+    "project_id": "myapp1-159806",
+    "storage_bucket": "myapp1-159806.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692759937193:android:1fc26ebea74fdc4d",
+        "android_client_info": {
+          "package_name": "com.example.bilal.findfastestambulance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692759937193-1uf31qkof1sgicab5e5eelotgds5mo6v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfOJXGHVQtE8YP6_9pEOoLYn0s60aS2ds"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

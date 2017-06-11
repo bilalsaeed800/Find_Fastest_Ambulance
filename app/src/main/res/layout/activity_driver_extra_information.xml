@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bestbackgound"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.bilal.findfastestambulance.DriverExtraInformation">
+
+    <EditText
+        android:id="@+id/FullNametxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_weight="1"
+        android:hint="Enter Full Name"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Company"
+            android:textSize="25dp" />
+
+        <Spinner
+            android:id="@+id/Companytxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:entries="@array/company"
+            android:textAlignment="textEnd" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/VehicleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:hint="Enter Your Vehicle Name"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/VehicleNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Enter Your Vehicle Number"
+        android:textSize="25dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false" />
+
+        <ImageButton
+            android:id="@+id/GoNowBtn"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="54dp"
+            android:layout_weight="1"
+            android:background="@drawable/go_now" />
+
+    </LinearLayout>
+
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3834585426199180/1552701152" />
+</LinearLayout>

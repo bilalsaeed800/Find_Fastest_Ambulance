@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/bestbackgound"
+    tools:context="com.example.bilal.findfastestambulance.UserExtraInformation">
+
+    <EditText
+        android:id="@+id/FullNametxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Full Name"
+        android:textSize="25dp"
+        android:layout_weight=".5"
+        android:layout_marginTop="35dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="3">
+
+        <ImageButton
+            android:id="@+id/GoNowBtn"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/VehicleNo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:layout_weight="1"
+            android:background="@drawable/go_now" />
+
+    </RelativeLayout>
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3834585426199180/1552701152" />
+
+</LinearLayout>

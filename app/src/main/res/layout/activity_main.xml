@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="@drawable/bestbackgound"
+    tools:context="com.example.bilal.findfastestambulance.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="387dp"
+        android:layout_height="515dp"
+        android:layout_weight="9"
+        android:layout_gravity="center">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3834585426199180/1552701152"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find the Fastest \n    Ambulance"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#3C45C1"
+            android:layout_above="@+id/Signupbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="88dp" />
+
+        <ImageButton
+            android:id="@+id/Signupbtn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/signup"
+            android:layout_marginBottom="35dp"
+            android:layout_above="@+id/Signinbtn"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:id="@+id/Signinbtn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/Signupbtn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/Signupbtn"
+            android:layout_marginBottom="83dp"
+            android:background="@drawable/signin"
+            tools:layout_editor_absoluteX="71dp"
+            tools:layout_editor_absoluteY="277dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By signing up, you agree to our\n    Terms and Privacy Policy."
+            android:id="@+id/TermAndPolicyTextView"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="39dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </RelativeLayout>
+</LinearLayout>
